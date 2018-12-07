@@ -7,21 +7,17 @@ public class Main {
 
         System.out.println("Please enter number:");
         Scanner scanner = new Scanner(System.in);
-
+        int m = scanner.nextInt();
         int n = scanner.nextInt();
-        System.out.println(diff21(n));
-
-
+        System.out.println(sumDouble(m, n));
 
 
     }
-    public static int diff21(int n) {
-        int a = n-21;
-        int b = 2*(n-21);
-        if (n>=21){
-            return b;
+    public static int sumDouble(int a, int b) {
+        if (a==b){
+            return 2*(a+b);
         }else {
-            return a;
+            return a+b;
         }
     }
 }
